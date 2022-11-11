@@ -39,6 +39,7 @@ public class OneWayBooking {
 		actions.moveToElement(depart).click().build().perform();
 		actions.moveToElement(depart).click().build().perform();
 
+		//SELECTING DATE OF DEPARTURE FOR ONE WAY FLIGHT
 		while(true) {
 			String month = driver.findElement(By.xpath("//*[@class='ui-datepicker-header ui-widget-header ui-helper-clearfix ui-corner-left']/div/span[1]")).getText();
 		    String year = driver.findElement(By.xpath("//*[@class='ui-datepicker-header ui-widget-header ui-helper-clearfix ui-corner-left']/div/span[2]")).getText();
